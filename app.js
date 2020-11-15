@@ -3,7 +3,8 @@ const tbody = document.querySelector('.table-body');
 
 function setup() {
     noCanvas();
-    let lang = navigator.language || 'en-us';
+    let lang_code="pt-br" //navigator.language || 'pt-br';
+    let lang = "pt-br";
     let speechRec = new p5.SpeechRec(lang, gotSpeech);
 
     speechRec.start(true, false);
